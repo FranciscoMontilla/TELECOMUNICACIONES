@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco González - Perfil Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Fondo gris claro */
+            color: #374151; /* Texto gris oscuro */
+        }
+        .section-content {
+            display: none; /* Oculta todas las secciones por defecto */
+        }
+        .section-content.active {
+            display: block; /* Muestra la sección activa */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <nav class="bg-gradient-to-r from-blue-600 to-blue-800 p-4 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-white text-3xl font-bold mb-2 md:mb-0">Francisco González</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#inicio" class="text-white hover:text-blue-200 transition duration-300 text-lg font-medium" onclick="showSection('inicio')">Inicio</a></li>
+                <li><a href="#experiencia" class="text-white hover:text-blue-200 transition duration-300 text-lg font-medium" onclick="showSection('experiencia')">Experiencia</a></li>
+                <li><a href="#educacion" class="text-white hover:text-blue-200 transition duration-300 text-lg font-medium" onclick="showSection('educacion')">Educación y Formación</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-6 flex-grow">
+        <section id="inicio" class="section-content active bg-white rounded-lg shadow-xl p-8 mb-8">
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/200x200/a0aec0/ffffff?text=Tu+Foto" alt="Francisco González" class="rounded-full w-48 h-48 object-cover border-4 border-blue-500 shadow-md">
+                </div>
+                <div class="text-center md:text-left">
+                    <h2 class="text-4xl font-extrabold text-blue-700 mb-2">Especialista en Telecomunicaciones</h2>
+                    <p class="text-lg text-gray-600 mb-4">
+                        <span class="font-semibold">Teléfono:</span> +58 4121512340 <br>
+                        <span class="font-semibold">Email:</span> franciscoalexm@gmail.com
+                    </p>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Perfil Profesional</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Ingeniero Sénior de Integración con más de 20 años de experiencia en el sector de las
+                        telecomunicaciones, especializado en infraestructura y soluciones de Ericsson. Experiencia
+                        demostrada liderando proyectos integrales de modernización en redes multigeneracionales (2G,
+                        3G, 4G y 5G), garantizando la entrega exitosa, el control de calidad y el cumplimiento de los plazos
+                        del proyecto.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Amplia experiencia práctica en la instalación, configuración y puesta en marcha de equipos CORE
+                        y RAN de Ericsson, incluyendo RBS 2000, 6000 (nodos CPP) y la serie BASEBAND 6000 (nodos
+                        COM), así como Mini-Link (E, HC, TN). Experto en configuración de SIU/TCU y gestión integral
+                        de proyectos, desde la planificación hasta la ejecución.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Experiencia en la realización de auditorías de calidad para GSM, WCDMA, LTE e infraestructura
+                        de transmisión, garantizando el cumplimiento de los estándares técnicos y la excelencia operativa.
+                        Técnicamente competente en una variedad de lenguajes de programación y scripting, incluidos
+                        Java, Python, C, Perl, AWK y Bash, con sólida experiencia en entornos de bases de datos SQL y
+                        NoSQL, lo que permite una automatización efectiva y el manejo de datos dentro de proyectos de
+                        telecomunicaciones.
+                    </p>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">Idiomas:</h4>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Español: Lengua Materna</li>
+                        <li>English: B1</li>
+                        <li>Portugués: Básico</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section-content bg-white rounded-lg shadow-xl p-8 mb-8">
+            <h2 class="text-3xl font-extrabold text-blue-700 mb-6 text-center">Experiencia Laboral</h2>
+            <div class="space-y-8">
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones / Coordinador de Comisionamiento</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Open Sea (Proyecto Telcel México), Ciudad de México, México (Remoto)</p>
+                    <p class="text-gray-600 italic mb-2">Julio 2024 - Marzo 2025</p>
+                    <p class="text-gray-700">Creación de datos y soporte técnico para el comisionamiento y puesta en servicio de RBSs Ericsson Nodos COM (6630, 6631, RAN PROCESSOR 6651) y nodos CPP (DUW, DUL) para tecnologías 2G, 3G, 4G y 5G.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero RF</h3>
+                    <p class="text-blue-600 text-lg font-semibold">ASAP (Proyecto ZTE de Venezuela), Caracas, Venezuela</p>
+                    <p class="text-gray-600 italic mb-2">Enero 2024 - Julio 2024</p>
+                    <p class="text-gray-700">Puesta en servicio, integración y SWAPs de RBS Huawei por (V9200) ZTE para las tecnologías 2G, 3G y 4G.</p>
+                </div>
+                 <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">CIRCET España (Remoto), Caracas, Venezuela</p>
+                    <p class="text-gray-600 italic mb-2">Abril 2022 - Septiembre 2022</p>
+                    <p class="text-gray-700">Creación de datos, puesta en servicio e integración de RBS Baseband (6630) Ericsson para la tecnología 5G (Spectrum sharing). Integración de nodos CPP LTE & 3G Nodos Baseband 4G y 3G.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson C.A Venezuela, Caracas, Venezuela</p>
+                    <p class="text-gray-600 italic mb-2">Enero 2019 - Marzo 2022</p>
+                    <p class="text-gray-700">Creación de datos, Supervisión, instalación, puesta en servicio e integración de RBS Baseband (5216 y 6630) Ericsson. Swap de Huawey a Ericsson de RBS Baseband (5216 y 6630) para operadora Digitel (Proyecto Modernización Zulia-Falcon). Comisionamiento e Integración de RBS 3G (DUW31/41) 4G (DUL 2001). Auditoría 2G, 3G, 4G.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Cuba (ETECSA), La Habana, Cuba</p>
+                    <p class="text-gray-600 italic mb-2">Octubre 2018 - Diciembre 2018</p>
+                    <p class="text-gray-700">Creación de datos e integración de RBS Baseband (5216 y 6630). Rehoming 2G y 3G.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson C.A Venezuela, Caracas, Venezuela</p>
+                    <p class="text-gray-600 italic mb-2">Enero 2009 - Marzo 2016</p>
+                    <p class="text-gray-700">Creación de datos, Integración, puesta en marcha, instalación y entrega de datos al cliente de RBS 2000 y 6000, para los operadores Movilnet (Caracas, Carabobo, Cojedes, Falcón y Zulia), Digitel (Aragua, Guárico) y Movistar (Barinas). Swap de RBS Nokia a Ericsson para Digitel en Caracas y Vargas. Comisionamiento de SIU para RBS 2G, 3G y 4G, para pasar de TDM a IP, para Digitel Caracas, Vargas y Maracay. Integración de eNodeb (LTE) para Digitel Maracay. Integración de celdas Micro y Pico para Movilnet. Integración y puesta en servicio de RBS 2G (Serie 6000), 3G y 4G, en proyecto fase II de Digitel. Puesta en gestión de toda la red de minienlaces series (E, TN, HC, LH) del cliente CANTV. Creación y Ejecución de Datos de rehoming GSM para (Movilnet y Digitel).</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones (Remoto)</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Honduras, Caracas, Venezuela</p>
+                    <p class="text-gray-600 italic mb-2">Febrero 2016</p>
+                    <p class="text-gray-700">Creación de datos, ejecución de Rehoming RBS 6000 y solución de problemas.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Cuba - ETECSA, La Habana, Cuba</p>
+                    <p class="text-gray-600 italic mb-2">Diciembre 2015</p>
+                    <p class="text-gray-700">Creación de datos de todos los BSCs y ejecución de Rehoming al cliente ETECSA. Soporte BSC e Integración de BTS para la serie 2000.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones (Remoto)</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Guyana, Caracas, Venezuela</p>
+                    <p class="text-gray-600 italic mb-2">Noviembre-Diciembre 2015</p>
+                    <p class="text-gray-700">Integración 3G para la Primera y Segunda portadora. Rehoming GSM.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Cuba - ETECSA, La Habana, Cuba</p>
+                    <p class="text-gray-600 italic mb-2">Agosto 2015</p>
+                    <p class="text-gray-700">Creación de datos de todos los BSCs y ejecución de Rehoming al cliente ETECSA. Soporte BSC e Integración BTS de RBS 2000.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Nicaragua, Managua, Nicaragua</p>
+                    <p class="text-gray-600 italic mb-2">Noviembre 2011 - Diciembre 2011</p>
+                    <p class="text-gray-700">Integración y Rehoming GSM de BTS 2000 y 6000.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Jamaica /Lime Fase 2 Project, Kingston, Jamaica</p>
+                    <p class="text-gray-600 italic mb-2">Enero 2011 - Febrero 2011</p>
+                    <p class="text-gray-700">Integración & Solución de Fallas de BTS 2000 & 6000.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">CONNECT 44 (Contractor). Ericsson Guatemala, Ciudad de Guatemala, Guatemala</p>
+                    <p class="text-gray-600 italic mb-2">Noviembre 2008 - Diciembre 2008</p>
+                    <p class="text-gray-700">Creación de datos de todos los BSC y ejecución de Rehoming al cliente Comcel.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Costa Rica, San José, Costa Rica</p>
+                    <p class="text-gray-600 italic mb-2">Noviembre 2007 - Diciembre 2007</p>
+                    <p class="text-gray-700">Comisionamiento e Integración de RBS 2000 GSM. Cliente ICE.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Haití, Puerto Príncipe, Haití</p>
+                    <p class="text-gray-600 italic mb-2">Noviembre 2006 - Diciembre 2006</p>
+                    <p class="text-gray-700">Comisionamiento e Integración de RBS 2000 GSM.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Cuba, La Habana, Cuba</p>
+                    <p class="text-gray-600 italic mb-2">Febrero 2006 - Abril 2006</p>
+                    <p class="text-gray-700">Comisionamiento, Integración y Rehoming de RBS 2000 GSM.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Integraciones</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Costa Rica ICE 600 K Project, San José, Costa Rica</p>
+                    <p class="text-gray-600 italic mb-2">Agosto 2005 - Noviembre 2005</p>
+                    <p class="text-gray-700">Comisionamiento e Integración de RBS 2000 GSM.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Pruebas Senior</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Tangent International (Contractor) Ericsson TEXAS DALLAS</p>
+                    <p class="text-gray-600 italic mb-2">Abril 2000 Mayo 2000</p>
+                    <p class="text-gray-700">Contratado por Ericsson Dallas, Texas (EE.UU.), en calidad de Ingeniero de Pruebas Senior. Mi trabajo incluyó la instalación, prueba y puesta en marcha de RBS, agregado de canales y troubleshooting para macro RBS 884 de alta potencia, baja potencia y compacta (884, 884 RBS 1900, para clientes como AT&T y BellSouth Mobility).</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Técnico de Pruebas II</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Versacell Venezuela, Caracas, Venezuela</p>
+                    <p class="text-gray-600 italic mb-2">Noviembre 1999 - Julio 2002</p>
+                    <p class="text-gray-700">Instalación, puesta en marcha e integraciones de RBS 882-884. Configuración de MINI-LINK Serie E.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Pruebas</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson El Salvador, San Salvador, El Salvador</p>
+                    <p class="text-gray-600 italic mb-2">Julio 1999 - Septiembre 1999</p>
+                    <p class="text-gray-700">Instalación, prueba y puesta en marcha de RBS, agregado de canales y troubleshooting para macro RBS 882-884 de alta potencia, bajo potencia y compacta (882-884, 884 RBS 1900, para Cliente Telemovil).</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-2xl font-bold text-gray-800">Ingeniero de Pruebas</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Brasil, Rio de Janeiro, Brasil</p>
+                    <p class="text-gray-600 italic mb-2">Febrero 1998 - Junio 1998</p>
+                    <p class="text-gray-700">Comisionamiento e integración, agregado de canales y troubleshooting para RBS Macro 884 (de alta potencia, baja potencia y compacta (884, 884 RBS 1900).</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800">Técnico de Pruebas I</h3>
+                    <p class="text-blue-600 text-lg font-semibold">Ericsson Venezuela, Caracas, Venezuela</p>
+                    <p class="text-gray-600 italic mb-2">Febrero 1998 - Noviembre 1999</p>
+                    <p class="text-gray-700">Comisionamiento e integración, agregado de canales y troubleshooting para RBS Macro 884 (de alta potencia, baja potencia y compacta (884, 884 RBS 1900).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="educacion" class="section-content bg-white rounded-lg shadow-xl p-8 mb-8">
+            <h2 class="text-3xl font-extrabold text-blue-700 mb-6 text-center">Educación y Formación</h2>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Educación</h3>
+                    <div class="mb-4">
+                        <p class="text-blue-600 text-lg font-semibold">Ingeniero en Informática</p>
+                        <p class="text-gray-600 italic">Año 2012-2016</p>
+                        <p class="text-gray-700">Instituto Universitario de Tecnología Dr. Federico Rivero Palacio, Caracas - Venezuela.</p>
+                    </div>
+                    <div>
+                        <p class="text-blue-600 text-lg font-semibold">Técnico Superior en Análisis de Sistemas</p>
+                        <p class="text-gray-600 italic">Año 1992-1995</p>
+                        <p class="text-gray-700">Instituto Universitario de Tecnología para la Informática, Guanare - Venezuela.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Entrenamiento Técnico</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>5G RAN System Techniques. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>4G-5G Split RAN Architecture. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>Multi Antenna High level MIMO. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>Fixed Wireless Access handbook. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>Fixed Wireless Access. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>Connect 5G Radio & Network Evolution. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>5G specification. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>5G Basic. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>Safe Driving Awareness. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>OHS Zero Tolerance Rules. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>Occupational Health and Safety OHS Incident Handling. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>5G Story. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>Ericsson Tech Traveler. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>Unconscious Bias. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>Occupational Health and Safety - an Introduction. 2019, Ericsson, Caracas - Venezuela.</li>
+                        <li>LTE L14 Troubleshooting. 2015. Ericsson, Caracas - Venezuela.</li>
+                        <li>Security Sally - Awareness Training. 2015. Ericsson, Caracas - Venezuela.</li>
+                        <li>LTE L13 Configuration. 2014. Ericcson - Venezuela.</li>
+                        <li>WCDMA RAN W13 Functionality. 2013. Ericcson, Caracas - Venezuela.</li>
+                        <li>WCDMA Air Interface. 2013. Ericcson, Caracas - Venezuela.</li>
+                        <li>WCDMARAN W13 Protocols and Procedures. 2013. Ericcson, Caracas - Venezuela.</li>
+                        <li>Introduction to PROPS-C. 2012. Ericsson, Caracas - Venezuela.</li>
+                        <li>WCDMA RAN W10 Operation. 2011. Ericsson - Costa Rica.</li>
+                        <li>WCDMA RAN W10 Configuration. 2011. Ericsson - Costa Rica.</li>
+                        <li>GSM WCDMA Transport Network Overview. 2010. Ericsson - Caracas. Venezuela.</li>
+                        <li>Security Sally - Awareness Trainig. 2010. Ericsson, Caracas - Venezuela.</li>
+                        <li>MINI-LINK TN R4 Operation and Maintenance. 2010. Ericsson, Caracas - Venezuela.</li>
+                        <li>WCDMA Radio Access Network Overview. 2010. Ericsson, Caracas - Venezuela.</li>
+                        <li>SIGTRAN Workshop. 2009. Ericsson - Venezuela.</li>
+                        <li>Técnico Profesional Integración de Nodos B. 2009. Ericsson - Venezuela.</li>
+                        <li>Knowledge Centered Support. 2009. Ericsson - Venezuela.</li>
+                        <li>Local Support. 2009. Ericsson, Caracas - Venezuela.</li>
+                        <li>General Security Training. Security Sally II. 2009. Ericsson, Caracas - Venezuela.</li>
+                        <li>Operación Básica Unix/Linux/Solaris. 2001. UnixSupport, Caracas - Venezuela.</li>
+                        <li>Windows 2000 server. 2003. UNEXPO, Barquisimeto - Venezuela.</li>
+                        <li>Protección Contra Descargas Electrostáticas. 1999. Ericsson, Caracas - Venezuela.</li>
+                        <li>Básico de Transmisión. 1998. Ericsson, Caracas - Venezuela.</li>
+                        <li>AXE 10 Sinopsis. 1998. Ericsson, Caracas - Venezuela.</li>
+                        <li>CMS 8800 Digital Introduction. 1998. Ericsson, Caracas - Venezuela.</li>
+                        <li>CMS 8800 Digital Overview. 1998. Ericsson, Caracas - Venezuela.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-800 text-white p-4 text-center mt-8">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Francisco González. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Función para mostrar la sección seleccionada y ocultar las demás
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section-content');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+
+            // Actualiza la URL sin recargar la página
+            history.pushState(null, '', `#${sectionId}`);
+        }
+
+        // Muestra la sección inicial al cargar la página
+        window.onload = function() {
+            const hash = window.location.hash.substring(1); // Obtiene el hash de la URL sin el '#'
+            if (hash && document.getElementById(hash)) {
+                showSection(hash);
+            } else {
+                showSection('inicio'); // Muestra la sección de inicio por defecto
+            }
+        };
+    </script>
+</body>
+</html>
